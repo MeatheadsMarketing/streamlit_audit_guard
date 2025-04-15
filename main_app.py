@@ -16,7 +16,8 @@ tabs = {
     "Recovery Tab": "recovery_tab.py",
     "Fix Summary": "fix_summary_tab.py",
     "Deployment Finalizer": "deploy_tab.py",
-    "Assistant Explorer": "explorer_tab.py"
+    "Assistant Explorer": "explorer_tab.py",
+    "Validator Checkpoint UI": "validator_tab.py"
 }
 
 st.set_page_config(page_title="Streamlit Audit Guard Launcher", layout="wide")

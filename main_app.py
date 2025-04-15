@@ -1,21 +1,14 @@
-
 import streamlit as st
 import datetime
-
-def render_header():
-    st.markdown("# 🧠 Streamlit Audit Guard")
-    st.markdown("### Final Validation & Assistant Launch Gateway")
-    st.info("🔖 **Version:** v1.3  
-📅 **Last Updated:** " + datetime.datetime.now().strftime("%Y-%m-%d") + "  
-👤 **Maintained By:** `StreamlitAuditSystem`  
-🚦 **Status:** Live ✅")
-    st.markdown("---")
-
-
-import streamlit as st
-from pathlib import Path
 import importlib.util
 import sys
+from pathlib import Path
+
+def render_header():
+    st.markdown("# Streamlit Audit Guard")
+    st.markdown("### Final Validation & Assistant Launch Gateway")
+    st.info("Version: v1.3\nLast Updated: " + datetime.datetime.now().strftime("%Y-%m-%d") +
+            "\nMaintained By: StreamlitAuditSystem\nStatus: Live")
 
 # Tab names and their corresponding script files
 tabs = {
@@ -28,8 +21,6 @@ tabs = {
 
 st.set_page_config(page_title="Streamlit Audit Guard Launcher", layout="wide")
 render_header()
-
-st.title("Streamlit Audit Guard v1.0 – Launcher")
 
 # Sidebar navigation
 selected_tab = st.sidebar.radio("Select a Module", list(tabs.keys()))

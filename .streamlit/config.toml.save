@@ -1,0 +1,3 @@
+k# Create .streamlit folder and move the config file
+mkdir -p .streamlit
+mv /path/to/config.toml .streamlit/config.toml
